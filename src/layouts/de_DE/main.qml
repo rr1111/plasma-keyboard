@@ -43,19 +43,19 @@ KeyboardLayout {
         }
         Key {
             key: Qt.Key_Left
-            text: "⬅️"
+            text: "left"
         }
         Key {
             key: Qt.Key_Up
-            text: "⬆️"
+            text: "up"
         }
         Key {
             key: Qt.Key_Down
-            text: "⬇️"
+            text: "down"
         }
         Key {
             key: Qt.Key_Right
-            text: "➡️"
+            text: "right"
         }
     }
     KeyboardRow {
