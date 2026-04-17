@@ -14,6 +14,53 @@ KeyboardLayout {
     KeyboardRow {
         Key {
             key: Qt.Key_Q
+            text: ""
+        }
+        Key {
+            id: normalKey
+            key: Qt.Key_W
+            text: "w"
+        }
+        Key {
+            key: Qt.Key_E
+            text: "e"
+        }
+        Key {
+            key: Qt.Key_R
+            text: "r"
+        }
+        Key {
+            key: Qt.Key_T
+            text: "t"
+        }
+        Key {
+            key: Qt.Key_Z
+            text: "z"
+        }
+        Key {
+            key: Qt.Key_U
+            text: "u"
+        }
+        Key {
+            key: Qt.Key_Left
+            text: "⬅️"
+        }
+        Key {
+            key: Qt.Key_Up
+            text: "⬆️"
+        }
+        Key {
+            key: Qt.Key_Down
+            text: "⬇️"
+        }
+        Key {
+            key: Qt.Key_Right
+            text: "➡️"
+        }
+    }
+    KeyboardRow {
+        Key {
+            key: Qt.Key_Q
             text: "q"
         }
         Key {
