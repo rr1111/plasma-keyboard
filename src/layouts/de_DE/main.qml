@@ -40,24 +40,21 @@ KeyboardLayout {
             key: Qt.Key_U
             text: "u"
         }
-        KeyboardKey {
-            text: "left"
-            onClicked: InputContext.sendKeyClick(Qt.Key_Left)
+        Key {
+            key: Qt.Key_Left
+            displayText: "left"
         }
-
-        KeyboardKey {
-            text: "up"
-            onClicked: InputContext.sendKeyClick(Qt.Key_Up)
+        Key {
+            key: Qt.Key_Up
+            displayText: "up"
         }
-
-        KeyboardKey {
-            text: "down"
-            onClicked: InputContext.sendKeyClick(Qt.Key_Down)
+        Key {
+            key: Qt.Key_Down
+            displayText: "down"
         }
-
-        KeyboardKey {
-            text: "right"
-            onClicked: InputContext.sendKeyClick(Qt.Key_Right)
+        Key {
+            key: Qt.Key_Right
+            displayText: "right"
         }
     }
     KeyboardRow {
