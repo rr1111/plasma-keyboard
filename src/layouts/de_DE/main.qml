@@ -20,11 +20,15 @@ KeyboardLayout {
             key: Qt.Key_Tab
             displayText: "Tab"
         }
-        AltKey     {
-            weight: 180
-        }
-        ControlKey {
-            weight: 180
+        KeyboardRow {
+            Layout.preferredWidth: functionKeyWidth
+            Layout.fillWidth: false
+            AltKey {
+                weight: 180
+            }
+            ControlKey {
+                weight: 180
+            }
         }
         Key {
             key: Qt.Key_Delete
