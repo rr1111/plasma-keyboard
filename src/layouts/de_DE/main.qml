@@ -5,7 +5,6 @@ import QtQuick
 import QtQuick.VirtualKeyboard
 import QtQuick.VirtualKeyboard.Components
 import QtQuick.Layouts
-import ControlKey
 
 KeyboardLayout {
     inputMode: InputEngine.InputMode.Latin
@@ -19,26 +18,23 @@ KeyboardLayout {
         }
         Key {
             key: Qt.Key_Tab
-            displayText: "Tab"
+            displayText: "⇥"
         }
         Key {
-            key: Qt.Key_Alt
-            displayText: "Alt"
-        }
-        ControlKey {
-            weight: 240
+            key: Qt.Key_Insert
+            displayText: "⎀"
         }
         Key {
             key: Qt.Key_Delete
-            displayText: "Entf"
+            displayText: "⌦"
         }
         Key {
-            key: Qt.Key_NumberSign
-            text: "#"
+            key: Qt.Key_AsciiTilde
+            text: "~"
         }
         Key {
-            key: Qt.Key_Asterisk
-            text: "*"
+            key: Qt.Key_Slash
+            text: "/"
         }
         Key {
             key: Qt.Key_Left
