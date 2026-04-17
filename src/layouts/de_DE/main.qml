@@ -5,6 +5,7 @@ import QtQuick
 import QtQuick.VirtualKeyboard
 import QtQuick.VirtualKeyboard.Components
 import QtQuick.Layouts
+import ControlKey
 
 KeyboardLayout {
     inputMode: InputEngine.InputMode.Latin
@@ -24,9 +25,8 @@ KeyboardLayout {
             key: Qt.Key_Alt
             displayText: "Alt"
         }
-        Key {
-            key: Qt.Key_Control
-            displayText: "Strg"
+        ControlKey {
+            weight: 240
         }
         Key {
             key: Qt.Key_Delete
