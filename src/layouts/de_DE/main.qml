@@ -12,15 +12,12 @@ KeyboardLayout {
     readonly property real normalKeyWidth: normalKey.width
     readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
     KeyboardRow {
-        KeyboardRow {
-            Layout.preferredWidth: functionKeyWidth
-            Layout.fillWidth: false
-            AltKey {
-                weight: 180
-            }
-            ControlKey {
-                weight: 180
-            }
+        AltKey {
+            weight: 180
+        }
+        Key {
+            key: Qt.Key_Control
+            displayText: "Strg"
         }
         Key {
             key: Qt.Key_Escape
