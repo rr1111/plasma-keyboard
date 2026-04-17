@@ -18,6 +18,48 @@ KeyboardLayoutLoader {
             readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width / 2, 0).x
             KeyboardRow {
                 Key {
+                    key: Qt.Key_Escape
+                    displayText: "Esc"
+                }
+                Key {
+                    key: Qt.Key_Tab
+                    displayText: "⇥"
+                }
+                Key {
+                    key: Qt.Key_Insert
+                    displayText: "⎀"
+                }
+                Key {
+                    key: Qt.Key_Delete
+                    displayText: "⌦"
+                }
+                Key {
+                    key: Qt.Key_AsciiTilde
+                    text: "~"
+                }
+                Key {
+                    key: Qt.Key_Slash
+                    text: "/"
+                }
+                Key {
+                    key: Qt.Key_Left
+                    displayText: "←"
+                }
+                Key {
+                    key: Qt.Key_Up
+                    displayText: "↑"
+                }
+                Key {
+                    key: Qt.Key_Down
+                    displayText: "↓"
+                }
+                Key {
+                    key: Qt.Key_Right
+                    displayText: "→"
+                }
+            }
+            KeyboardRow {
+                Key {
                     key: Qt.Key_1
                     text: "1"
                 }
