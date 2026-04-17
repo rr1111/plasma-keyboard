@@ -17,7 +17,6 @@ KeyboardLayout {
             text: ""
         }
         Key {
-            id: normalKey
             key: Qt.Key_W
             text: "w"
         }
