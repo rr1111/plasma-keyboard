@@ -12,13 +12,6 @@ KeyboardLayout {
     readonly property real normalKeyWidth: normalKey.width
     readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
     KeyboardRow {
-        AltKey {
-            weight: 180
-        }
-        Key {
-            key: Qt.Key_Control
-            displayText: "Strg"
-        }
         Key {
             key: Qt.Key_Escape
             displayText: "Esc"
@@ -26,6 +19,14 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Tab
             displayText: "Tab"
+        }
+        Key {
+            key: Qt.Key_Alt
+            displayText: "Alt"
+        }
+        Key {
+            key: Qt.Key_Control
+            displayText: "Strg"
         }
         Key {
             key: Qt.Key_Delete
