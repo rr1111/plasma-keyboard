@@ -41,22 +41,22 @@ KeyboardLayout {
             text: "u"
         }
         KeyboardKey {
-            text: "←"
+            text: "left"
             onClicked: InputContext.sendKeyClick(Qt.Key_Left)
         }
 
         KeyboardKey {
-            text: "↑"
+            text: "up"
             onClicked: InputContext.sendKeyClick(Qt.Key_Up)
         }
 
         KeyboardKey {
-            text: "↓"
+            text: "down"
             onClicked: InputContext.sendKeyClick(Qt.Key_Down)
         }
 
         KeyboardKey {
-            text: "→"
+            text: "right"
             onClicked: InputContext.sendKeyClick(Qt.Key_Right)
         }
     }
