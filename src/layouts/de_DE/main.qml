@@ -13,52 +13,6 @@ KeyboardLayout {
     readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
     KeyboardRow {
         Key {
-            key: Qt.Key_Escape
-            displayText: "Esc"
-        }
-        Key {
-            key: Qt.Key_Tab
-            displayText: "Tab"
-        }
-        Key {
-            key: Qt.Key_Alt
-            displayText: "Alt"
-        }
-        Key {
-            key: Qt.Key_Control
-            displayText: "Strg"
-        }
-        Key {
-            key: Qt.Key_Delete
-            displayText: "Entf"
-        }
-        Key {
-            key: Qt.Key_NumberSign
-            text: "#"
-        }
-        Key {
-            key: Qt.Key_Asterisk
-            text: "*"
-        }
-        Key {
-            key: Qt.Key_Left
-            displayText: "←"
-        }
-        Key {
-            key: Qt.Key_Up
-            displayText: "↑"
-        }
-        Key {
-            key: Qt.Key_Down
-            displayText: "↓"
-        }
-        Key {
-            key: Qt.Key_Right
-            displayText: "→"
-        }
-    }
-    KeyboardRow {
-        Key {
             key: Qt.Key_Q
             text: "q"
         }
@@ -238,6 +192,52 @@ KeyboardLayout {
         EnterKey {
             weight: functionKeyWidth
             Layout.fillWidth: false
+        }
+    }
+    KeyboardRow {
+        Key {
+            key: Qt.Key_Escape
+            displayText: "Esc"
+        }
+        Key {
+            key: Qt.Key_Tab
+            displayText: "Tab"
+        }
+        Key {
+            key: Qt.Key_Alt
+            displayText: "Alt"
+        }
+        Key {
+            key: Qt.Key_Control
+            displayText: "Strg"
+        }
+        Key {
+            key: Qt.Key_Delete
+            displayText: "Entf"
+        }
+        Key {
+            key: Qt.Key_NumberSign
+            text: "#"
+        }
+        Key {
+            key: Qt.Key_Asterisk
+            text: "*"
+        }
+        Key {
+            key: Qt.Key_Left
+            displayText: "←"
+        }
+        Key {
+            key: Qt.Key_Up
+            displayText: "↑"
+        }
+        Key {
+            key: Qt.Key_Down
+            displayText: "↓"
+        }
+        Key {
+            key: Qt.Key_Right
+            displayText: "→"
         }
     }
 }
