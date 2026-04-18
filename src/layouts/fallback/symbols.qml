@@ -24,6 +24,8 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Tab
                     displayText: "⇥"
+                    repeat: true
+
                 }
                 Key {
                     key: Qt.Key_Copy
@@ -32,6 +34,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Paste
                     displayText: "⎀"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_AsciiTilde
@@ -44,18 +47,22 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Left
                     displayText: "←"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Up
                     displayText: "↑"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Down
                     displayText: "↓"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Right
                     displayText: "→"
+                    repeat: true
                 }
             }
             KeyboardRow {
@@ -238,6 +245,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Tab
                     displayText: "⇥"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Copy
@@ -246,6 +254,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Paste
                     displayText: "⎀"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_AsciiTilde
@@ -258,18 +267,22 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Left
                     displayText: "←"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Up
                     displayText: "↑"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Down
                     displayText: "↓"
+                    repeat: true
                 }
                 Key {
                     key: Qt.Key_Right
                     displayText: "→"
+                    repeat: true
                 }
             }
             KeyboardRow {

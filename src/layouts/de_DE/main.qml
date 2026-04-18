@@ -19,6 +19,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Tab
             displayText: "⇥"
+            repeat: true
         }
         Key {
             key: Qt.Key_Copy
@@ -27,6 +28,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Paste
             displayText: "⎀"
+            repeat: true
         }
         Key {
             key: Qt.Key_AsciiTilde
@@ -39,18 +41,22 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Left
             displayText: "←"
+            repeat: true
         }
         Key {
             key: Qt.Key_Up
             displayText: "↑"
+            repeat: true
         }
         Key {
             key: Qt.Key_Down
             displayText: "↓"
+            repeat: true
         }
         Key {
             key: Qt.Key_Right
             displayText: "→"
+            repeat: true
         }
     }
     KeyboardRow {
