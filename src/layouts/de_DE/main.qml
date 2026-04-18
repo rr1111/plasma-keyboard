@@ -57,43 +57,73 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Q
             text: "q"
+            alternativeKeys: "q1"
+            smallText: "1"
+            smallTextVisible: true
         }
         Key {
             id: normalKey
             key: Qt.Key_W
             text: "w"
+            alternativeKeys: "w2"
+            smallText: "2"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_E
             text: "e"
+            alternativeKeys: "êe3ëèé€"
+            smallText: "3"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_R
             text: "r"
+            alternativeKeys: "ŕr4ř"
+            smallText: "4"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_T
             text: "t"
+            alternativeKeys: "ţt5ŧť"
+            smallText: "5"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_Z
             text: "z"
+            alternativeKeys: "z6žż"
+            smallText: "6"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_U
             text: "u"
+            alternativeKeys: "űūũûüu7ùú"
+            smallText: "7"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_I
             text: "i"
+            alternativeKeys: "îïīĩi8ìí"
+            smallText: "8"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_O
             text: "o"
+            alternativeKeys: "œøõôöòóo9"
+            smallText: "9"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_P
             text: "p"
+            alternativeKeys: "p0"
+            smallText: "0"
+            smallTextVisible: true
         }
         Key {
             key: Qt.Key_Udiaeresis
@@ -104,15 +134,17 @@ KeyboardLayout {
         Key {
             key: Qt.Key_A
             text: "a"
+            alternativeKeys: "aäåãâàá"
         }
         Key {
             key: Qt.Key_S
             text: "s"
-            alternativeKeys: "sß"
+            alternativeKeys: "sßšşś"
         }
         Key {
             key: Qt.Key_D
             text: "d"
+            alternativeKeys: "dđď"
         }
         Key {
             key: Qt.Key_F
@@ -121,6 +153,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_G
             text: "g"
+            alternativeKeys: "ġgģĝğ"
         }
         Key {
             key: Qt.Key_H
@@ -137,6 +170,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_L
             text: "l"
+            alternativeKeys: "ĺŀłļľl"
         }
         Key {
             key: Qt.Key_Odiaeresis
@@ -169,6 +203,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_C
             text: "c"
+            alternativeKeys: "çcċčć"
         }
         Key {
             key: Qt.Key_V
@@ -181,6 +216,7 @@ KeyboardLayout {
         Key {
             key: Qt.Key_N
             text: "n"
+            alternativeKeys: "ņńnň"
         }
         Key {
             key: Qt.Key_M
@@ -222,7 +258,7 @@ KeyboardLayout {
             weight: normalKeyWidth
             Layout.fillWidth: false
             text: "."
-            alternativeKeys: "!.?"
+            alternativeKeys: "!.?.,.;.:.@"
             smallText: "!?"
             smallTextVisible: true
             highlighted: true
