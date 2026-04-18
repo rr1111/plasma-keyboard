@@ -113,8 +113,8 @@ InputPanelWindow {
             width: inputPanel.keyboard.style ? inputPanel.keyboard.style.aspectRatio * inputPanel.keyboard.style.targetKeyboardHeight : 0
 
             Rectangle {
-                anchors.left: inputPanel.left
-                anchors.right: inputPanel.right
+                anchors.left: inputPanel.left - 2
+                anchors.right: inputPanel.right - 2
                 y: inputPanel.y + inputPanel.height / 5
                 height: 1
                 color: Qt.rgba(1, 1, 1, 0.18)   // tweak
