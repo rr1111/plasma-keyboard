@@ -26,7 +26,7 @@ KeyboardLayout {
         }
         Key {
             key: Qt.Key_Cut
-            displayText: "✂"
+            displayText: "✂\uFE0E"
         }
         Key {
             key: Qt.Key_Paste
