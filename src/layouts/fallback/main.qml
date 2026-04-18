@@ -21,12 +21,16 @@ KeyboardLayout {
             displayText: "⇥"
         }
         Key {
-            key: Qt.Key_Insert
-            displayText: "⎀"
+            key: Qt.Key_Copy
+            displayText: "⧉"
         }
         Key {
-            key: Qt.Key_Delete
-            displayText: "⌦"
+            key: Qt.Key_Cut
+            displayText: "✂"
+        }
+        Key {
+            key: Qt.Key_Paste
+            displayText: "⎀"
         }
         Key {
             key: Qt.Key_AsciiTilde
