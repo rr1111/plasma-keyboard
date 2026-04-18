@@ -73,10 +73,10 @@ KeyboardStyle {
             return 950;
         } else if (Screen.width < 1200) {
             // Wider
-            return 850;
+            return 1200;
         }
         // Widest
-        return 800;
+        return 1200;
     }
 
     // The width should never be > 6 times height
