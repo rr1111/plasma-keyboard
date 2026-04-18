@@ -98,7 +98,7 @@ InputPanelWindow {
 
         // Never let width & height to be 0, otherwise it can cause problems for setting interactiveRegion
         width: inputPanel.width > 0 ? (inputPanel.width + padding * 2) : 100
-        height: inputPanel.height > 0 ? (inputPanel.height + padding * 3) : 100
+        height: inputPanel.height > 0 ? (inputPanel.height + padding * 2) : 100
 
         InputPanel {
             id: inputPanel
@@ -117,7 +117,7 @@ InputPanelWindow {
                 anchors.right: inputPanel.right
                 y: inputPanel.y + inputPanel.height / 5
                 height: 1
-                color: Qt.rgba(1, 1, 1, 0.18)   // tweak
+                color: Qt.rgba(0.41, 0.44, 0.48, 1)   // tweak
                 z: 9999
                 visible: inputPanel.height > 0
             }
