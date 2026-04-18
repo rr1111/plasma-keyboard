@@ -51,7 +51,7 @@ KeyboardStyle {
     }
 
     // Always have the keyboard panel be 30% of the screen height, or 150px (whichever is larger)
-    readonly property real targetKeyboardHeight: Math.max(Screen.height * 0.4, 600)
+    readonly property real targetKeyboardHeight: Math.max(Screen.height * 0.3, 150)
 
     // The value to multiply the height by to get the width
     readonly property real aspectRatio: {
@@ -76,7 +76,7 @@ KeyboardStyle {
             return 600;
         }
         // Widest
-        return 1400;
+        return 700;
     }
 
     // The width should never be > 6 times height
