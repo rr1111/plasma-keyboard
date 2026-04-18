@@ -112,16 +112,6 @@ InputPanelWindow {
             // height is calculated by InputPanel
             width: inputPanel.keyboard.style ? inputPanel.keyboard.style.aspectRatio * inputPanel.keyboard.style.targetKeyboardHeight : 0
 
-            Rectangle {
-                anchors.left: inputPanel.left
-                anchors.right: inputPanel.right
-                y: inputPanel.y + inputPanel.height / 5
-                height: 1
-                color: Qt.rgba(0.41, 0.44, 0.48, 1)   // tweak
-                z: 9999
-                visible: inputPanel.height > 0
-            }
-
             focusPolicy: Qt.NoFocus
             externalLanguageSwitchEnabled: true
             onExternalLanguageSwitch: (localeList, currentIndex) => {
