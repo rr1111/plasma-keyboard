@@ -6,276 +6,523 @@ import QtQuick.VirtualKeyboard
 import QtQuick.VirtualKeyboard.Components
 import QtQuick.Layouts
 
-KeyboardLayout {
-    inputMode: InputEngine.InputMode.Latin
-    keyWeight: 160
-    readonly property real normalKeyWidth: normalKey.width
-    readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
-    KeyboardRow {
-        Key {
-            key: Qt.Key_Escape
-            displayText: "Esc"
-        }
-        Key {
-            key: Qt.Key_Tab
-            displayText: "⇥"
-            repeat: true
-        }
-        Key {
-            key: Qt.Key_Copy
-            displayText: "⧉"
-        }
-        Key {
-            key: Qt.Key_Paste
-            displayText: "⎀"
-            repeat: true
-        }
-        Key {
-            key: Qt.Key_AsciiTilde
-            text: "~"
-        }
-        Key {
-            key: Qt.Key_Slash
-            text: "/"
-        }
-        Key {
-            key: Qt.Key_Left
-            displayText: "←"
-            repeat: true
-        }
-        Key {
-            key: Qt.Key_Up
-            displayText: "↑"
-            repeat: true
-        }
-        Key {
-            key: Qt.Key_Down
-            displayText: "↓"
-            repeat: true
-        }
-        Key {
-            key: Qt.Key_Right
-            displayText: "→"
-            repeat: true
+KeyboardLayoutLoader {
+    property bool secondPage
+    onVisibleChanged: if (!visible) secondPage = false
+    sourceComponent: secondPage ? page2 : page1
+    Component {
+        id: page2
+
+        KeyboardLayout {
+            inputMode: InputEngine.InputMode.Latin
+            keyWeight: 160
+            readonly property real normalKeyWidth: normalKey.width
+            readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
+            KeyboardRow {
+                Key {
+                    key: Qt.Key_Escape
+                    displayText: "Esc"
+                }
+                Key {
+                    key: Qt.Key_Tab
+                    displayText: "⇥"
+                    repeat: true
+                }
+                Key {
+                    key: Qt.Key_Copy
+                    displayText: "⧉"
+                }
+                Key {
+                    key: Qt.Key_Paste
+                    displayText: "⎀"
+                    repeat: true
+                }
+                Key {
+                    key: Qt.Key_AsciiTilde
+                    text: "~"
+                }
+                Key {
+                    key: Qt.Key_Slash
+                    text: "/"
+                }
+                Key {
+                    key: Qt.Key_Left
+                    displayText: "←"
+                    repeat: true
+                }
+                Key {
+                    key: Qt.Key_Up
+                    displayText: "↑"
+                    repeat: true
+                }
+                Key {
+                    key: Qt.Key_Down
+                    displayText: "↓"
+                    repeat: true
+                }
+                Key {
+                    key: Qt.Key_Right
+                    displayText: "→"
+                    repeat: true
+                }
+            }
+            KeyboardRow {
+                Key {
+                    key: Qt.Key_Q
+                    text: "q"
+                    alternativeKeys: "q1"
+                    smallText: "1"
+                    smallTextVisible: true
+                }
+                Key {
+                    id: normalKey
+                    key: Qt.Key_W
+                    text: "w"
+                    alternativeKeys: "w2"
+                    smallText: "2"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_E
+                    text: "e"
+                    alternativeKeys: "êe3ëèé€"
+                    smallText: "3"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_R
+                    text: "r"
+                    alternativeKeys: "ŕr4ř"
+                    smallText: "4"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_T
+                    text: "t"
+                    alternativeKeys: "ţt5ŧť"
+                    smallText: "5"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_Z
+                    text: "z"
+                    alternativeKeys: "z6žż"
+                    smallText: "6"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_U
+                    text: "u"
+                    alternativeKeys: "űūũûüu7ùú"
+                    smallText: "7"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_I
+                    text: "i"
+                    alternativeKeys: "îïīĩi8ìí"
+                    smallText: "8"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_O
+                    text: "o"
+                    alternativeKeys: "œøõôöòóo9"
+                    smallText: "9"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_P
+                    text: "p"
+                    alternativeKeys: "p0"
+                    smallText: "0"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_Udiaeresis
+                    text: "ü"
+                }
+            }
+            KeyboardRow {
+                Key {
+                    key: Qt.Key_A
+                    text: "a"
+                    alternativeKeys: "aäåãâàá"
+                }
+                Key {
+                    key: Qt.Key_S
+                    text: "s"
+                    alternativeKeys: "sßšşś"
+                }
+                Key {
+                    key: Qt.Key_D
+                    text: "d"
+                    alternativeKeys: "dđď"
+                }
+                Key {
+                    key: Qt.Key_F
+                    text: "f"
+                }
+                Key {
+                    key: Qt.Key_G
+                    text: "g"
+                    alternativeKeys: "ġgģĝğ"
+                }
+                Key {
+                    key: Qt.Key_H
+                    text: "h"
+                }
+                Key {
+                    key: Qt.Key_J
+                    text: "j"
+                }
+                Key {
+                    key: Qt.Key_K
+                    text: "k"
+                }
+                Key {
+                    key: Qt.Key_L
+                    text: "l"
+                    alternativeKeys: "ĺŀłļľl"
+                }
+                Key {
+                    key: Qt.Key_Odiaeresis
+                    text: "ö"
+                }
+                Key {
+                    key: Qt.Key_Adiaeresis
+                    text: "ä"
+                }
+            }
+            KeyboardRow {
+                KeyboardRow {
+                    Layout.preferredWidth: functionKeyWidth
+                    Layout.fillWidth: false
+                    ShiftKey {
+                        weight: 240
+                    }
+                    FillerKey {
+                        weight: 80
+                    }
+                }
+                Key {
+                    key: Qt.Key_Y
+                    text: "y"
+                }
+                Key {
+                    key: Qt.Key_X
+                    text: "x"
+                }
+                Key {
+                    key: Qt.Key_C
+                    text: "c"
+                    alternativeKeys: "çcċčć"
+                }
+                Key {
+                    key: Qt.Key_V
+                    text: "v"
+                }
+                Key {
+                    key: Qt.Key_B
+                    text: "b"
+                }
+                Key {
+                    key: Qt.Key_N
+                    text: "n"
+                    alternativeKeys: "ņńnň"
+                }
+                Key {
+                    key: Qt.Key_M
+                    text: "m"
+                }
+                KeyboardRow {
+                    Layout.preferredWidth: functionKeyWidth
+                    Layout.fillWidth: false
+                    FillerKey {
+                        weight: 80
+                    }
+                    BackspaceKey {
+                        weight: 240
+                    }
+                }
+            }
+            KeyboardRow {
+                SymbolModeKey {
+                    weight: functionKeyWidth
+                    Layout.fillWidth: false
+                }
+                Key {
+                    displayText: "hide"
+                    functionKey: true
+                    onClicked: secondPage = !secondPage
+                    highlighted: true
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                }
+                Key {
+                    key: Qt.Key_Comma
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                    text: ","
+                    smallText: "\u2699"
+                    smallTextVisible: keyboard.isFunctionPopupListAvailable()
+                    highlighted: true
+                }
+                SpaceKey {
+                }
+                Key {
+                    key: Qt.Key_Period
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                    text: "."
+                    alternativeKeys: "!.?,;:@"
+                    smallText: "!?"
+                    smallTextVisible: true
+                    highlighted: true
+                }
+                HideKeyboardKey {
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                }
+                EnterKey {
+                    weight: functionKeyWidth
+                    Layout.fillWidth: false
+                }
+            }
         }
     }
-    KeyboardRow {
-        Key {
-            key: Qt.Key_Q
-            text: "q"
-            alternativeKeys: "q1"
-            smallText: "1"
-            smallTextVisible: true
-        }
-        Key {
-            id: normalKey
-            key: Qt.Key_W
-            text: "w"
-            alternativeKeys: "w2"
-            smallText: "2"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_E
-            text: "e"
-            alternativeKeys: "êe3ëèé€"
-            smallText: "3"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_R
-            text: "r"
-            alternativeKeys: "ŕr4ř"
-            smallText: "4"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_T
-            text: "t"
-            alternativeKeys: "ţt5ŧť"
-            smallText: "5"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_Z
-            text: "z"
-            alternativeKeys: "z6žż"
-            smallText: "6"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_U
-            text: "u"
-            alternativeKeys: "űūũûüu7ùú"
-            smallText: "7"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_I
-            text: "i"
-            alternativeKeys: "îïīĩi8ìí"
-            smallText: "8"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_O
-            text: "o"
-            alternativeKeys: "œøõôöòóo9"
-            smallText: "9"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_P
-            text: "p"
-            alternativeKeys: "p0"
-            smallText: "0"
-            smallTextVisible: true
-        }
-        Key {
-            key: Qt.Key_Udiaeresis
-            text: "ü"
-        }
-    }
-    KeyboardRow {
-        Key {
-            key: Qt.Key_A
-            text: "a"
-            alternativeKeys: "aäåãâàá"
-        }
-        Key {
-            key: Qt.Key_S
-            text: "s"
-            alternativeKeys: "sßšşś"
-        }
-        Key {
-            key: Qt.Key_D
-            text: "d"
-            alternativeKeys: "dđď"
-        }
-        Key {
-            key: Qt.Key_F
-            text: "f"
-        }
-        Key {
-            key: Qt.Key_G
-            text: "g"
-            alternativeKeys: "ġgģĝğ"
-        }
-        Key {
-            key: Qt.Key_H
-            text: "h"
-        }
-        Key {
-            key: Qt.Key_J
-            text: "j"
-        }
-        Key {
-            key: Qt.Key_K
-            text: "k"
-        }
-        Key {
-            key: Qt.Key_L
-            text: "l"
-            alternativeKeys: "ĺŀłļľl"
-        }
-        Key {
-            key: Qt.Key_Odiaeresis
-            text: "ö"
-        }
-        Key {
-            key: Qt.Key_Adiaeresis
-            text: "ä"
-        }
-    }
-    KeyboardRow {
-        KeyboardRow {
-            Layout.preferredWidth: functionKeyWidth
-            Layout.fillWidth: false
-            ShiftKey {
-                weight: 240
+    Component {
+        id: page1
+
+        KeyboardLayout {
+            inputMode: InputEngine.InputMode.Latin
+            keyWeight: 160
+            readonly property real normalKeyWidth: normalKey.width
+            readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width, 0).x
+            KeyboardRow {
+                Key {
+                    key: Qt.Key_Q
+                    text: "q"
+                    alternativeKeys: "q1"
+                    smallText: "1"
+                    smallTextVisible: true
+                }
+                Key {
+                    id: normalKey
+                    key: Qt.Key_W
+                    text: "w"
+                    alternativeKeys: "w2"
+                    smallText: "2"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_E
+                    text: "e"
+                    alternativeKeys: "êe3ëèé€"
+                    smallText: "3"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_R
+                    text: "r"
+                    alternativeKeys: "ŕr4ř"
+                    smallText: "4"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_T
+                    text: "t"
+                    alternativeKeys: "ţt5ŧť"
+                    smallText: "5"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_Z
+                    text: "z"
+                    alternativeKeys: "z6žż"
+                    smallText: "6"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_U
+                    text: "u"
+                    alternativeKeys: "űūũûüu7ùú"
+                    smallText: "7"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_I
+                    text: "i"
+                    alternativeKeys: "îïīĩi8ìí"
+                    smallText: "8"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_O
+                    text: "o"
+                    alternativeKeys: "œøõôöòóo9"
+                    smallText: "9"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_P
+                    text: "p"
+                    alternativeKeys: "p0"
+                    smallText: "0"
+                    smallTextVisible: true
+                }
+                Key {
+                    key: Qt.Key_Udiaeresis
+                    text: "ü"
+                }
             }
-            FillerKey {
-                weight: 80
+            KeyboardRow {
+                Key {
+                    key: Qt.Key_A
+                    text: "a"
+                    alternativeKeys: "aäåãâàá"
+                }
+                Key {
+                    key: Qt.Key_S
+                    text: "s"
+                    alternativeKeys: "sßšşś"
+                }
+                Key {
+                    key: Qt.Key_D
+                    text: "d"
+                    alternativeKeys: "dđď"
+                }
+                Key {
+                    key: Qt.Key_F
+                    text: "f"
+                }
+                Key {
+                    key: Qt.Key_G
+                    text: "g"
+                    alternativeKeys: "ġgģĝğ"
+                }
+                Key {
+                    key: Qt.Key_H
+                    text: "h"
+                }
+                Key {
+                    key: Qt.Key_J
+                    text: "j"
+                }
+                Key {
+                    key: Qt.Key_K
+                    text: "k"
+                }
+                Key {
+                    key: Qt.Key_L
+                    text: "l"
+                    alternativeKeys: "ĺŀłļľl"
+                }
+                Key {
+                    key: Qt.Key_Odiaeresis
+                    text: "ö"
+                }
+                Key {
+                    key: Qt.Key_Adiaeresis
+                    text: "ä"
+                }
             }
-        }
-        Key {
-            key: Qt.Key_Y
-            text: "y"
-        }
-        Key {
-            key: Qt.Key_X
-            text: "x"
-        }
-        Key {
-            key: Qt.Key_C
-            text: "c"
-            alternativeKeys: "çcċčć"
-        }
-        Key {
-            key: Qt.Key_V
-            text: "v"
-        }
-        Key {
-            key: Qt.Key_B
-            text: "b"
-        }
-        Key {
-            key: Qt.Key_N
-            text: "n"
-            alternativeKeys: "ņńnň"
-        }
-        Key {
-            key: Qt.Key_M
-            text: "m"
-        }
-        KeyboardRow {
-            Layout.preferredWidth: functionKeyWidth
-            Layout.fillWidth: false
-            FillerKey {
-                weight: 80
+            KeyboardRow {
+                KeyboardRow {
+                    Layout.preferredWidth: functionKeyWidth
+                    Layout.fillWidth: false
+                    ShiftKey {
+                        weight: 240
+                    }
+                    FillerKey {
+                        weight: 80
+                    }
+                }
+                Key {
+                    key: Qt.Key_Y
+                    text: "y"
+                }
+                Key {
+                    key: Qt.Key_X
+                    text: "x"
+                }
+                Key {
+                    key: Qt.Key_C
+                    text: "c"
+                    alternativeKeys: "çcċčć"
+                }
+                Key {
+                    key: Qt.Key_V
+                    text: "v"
+                }
+                Key {
+                    key: Qt.Key_B
+                    text: "b"
+                }
+                Key {
+                    key: Qt.Key_N
+                    text: "n"
+                    alternativeKeys: "ņńnň"
+                }
+                Key {
+                    key: Qt.Key_M
+                    text: "m"
+                }
+                KeyboardRow {
+                    Layout.preferredWidth: functionKeyWidth
+                    Layout.fillWidth: false
+                    FillerKey {
+                        weight: 80
+                    }
+                    BackspaceKey {
+                        weight: 240
+                    }
+                }
             }
-            BackspaceKey {
-                weight: 240
+            KeyboardRow {
+                SymbolModeKey {
+                    weight: functionKeyWidth
+                    Layout.fillWidth: false
+                }
+                Key {
+                    displayText: "show"
+                    functionKey: true
+                    onClicked: secondPage = !secondPage
+                    highlighted: true
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                }
+                Key {
+                    key: Qt.Key_Comma
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                    text: ","
+                    smallText: "\u2699"
+                    smallTextVisible: keyboard.isFunctionPopupListAvailable()
+                    highlighted: true
+                }
+                SpaceKey {
+                }
+                Key {
+                    key: Qt.Key_Period
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                    text: "."
+                    alternativeKeys: "!.?,;:@"
+                    smallText: "!?"
+                    smallTextVisible: true
+                    highlighted: true
+                }
+                HideKeyboardKey {
+                    weight: normalKeyWidth
+                    Layout.fillWidth: false
+                }
+                EnterKey {
+                    weight: functionKeyWidth
+                    Layout.fillWidth: false
+                }
             }
-        }
-    }
-    KeyboardRow {
-        SymbolModeKey {
-            weight: functionKeyWidth
-            Layout.fillWidth: false
-        }
-        ChangeLanguageKey {
-            weight: normalKeyWidth
-            Layout.fillWidth: false
-        }
-        Key {
-            key: Qt.Key_Comma
-            weight: normalKeyWidth
-            Layout.fillWidth: false
-            text: ","
-            smallText: "\u2699"
-            smallTextVisible: keyboard.isFunctionPopupListAvailable()
-            highlighted: true
-        }
-        SpaceKey {
-        }
-        Key {
-            key: Qt.Key_Period
-            weight: normalKeyWidth
-            Layout.fillWidth: false
-            text: "."
-            alternativeKeys: "!.?,;:@"
-            smallText: "!?"
-            smallTextVisible: true
-            highlighted: true
-        }
-        HideKeyboardKey {
-            weight: normalKeyWidth
-            Layout.fillWidth: false
-        }
-        EnterKey {
-            weight: functionKeyWidth
-            Layout.fillWidth: false
         }
     }
 }
+
