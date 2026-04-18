@@ -30,10 +30,6 @@ KeyboardLayoutLoader {
                     displayText: "⧉"
                 }
                 Key {
-                    key: Qt.Key_Cut
-                    displayText: "✂\uFE0E"
-                }
-                Key {
                     key: Qt.Key_Paste
                     displayText: "⎀"
                 }
@@ -246,10 +242,6 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_Copy
                     displayText: "⧉"
-                }
-                Key {
-                    key: Qt.Key_Cut
-                    displayText: "✂\uFE0E"
                 }
                 Key {
                     key: Qt.Key_Paste
