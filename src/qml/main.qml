@@ -98,7 +98,7 @@ InputPanelWindow {
 
         // Never let width & height to be 0, otherwise it can cause problems for setting interactiveRegion
         width: inputPanel.width > 0 ? (inputPanel.width + padding * 2) : 100
-        height: inputPanel.height > 0 ? (inputPanel.height + padding * 2) : 100
+        height: inputPanel.height > 0 ? (inputPanel.height + padding * 3) : 100
 
         InputPanel {
             id: inputPanel
@@ -113,8 +113,8 @@ InputPanelWindow {
             width: inputPanel.keyboard.style ? inputPanel.keyboard.style.aspectRatio * inputPanel.keyboard.style.targetKeyboardHeight : 0
 
             Rectangle {
-                anchors.left: inputPanel.left - 2
-                anchors.right: inputPanel.right - 2
+                anchors.left: inputPanel.left
+                anchors.right: inputPanel.right
                 y: inputPanel.y + inputPanel.height / 5
                 height: 1
                 color: Qt.rgba(1, 1, 1, 0.18)   // tweak
