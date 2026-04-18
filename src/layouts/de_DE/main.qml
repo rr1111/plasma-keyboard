@@ -23,6 +23,12 @@ KeyboardLayout {
         Key {
             key: Qt.Key_Copy
             displayText: "⧉"
+            smallText: "✂"
+            smallTextVisible: true
+
+            alternativeKeysList: [
+                { key: Qt.Key_Cut, text: "✂" }
+            ]
         }
         Key {
             key: Qt.Key_Paste
