@@ -18,55 +18,6 @@ KeyboardLayoutLoader {
             readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width / 2, 0).x
             KeyboardRow {
                 Key {
-                    key: Qt.Key_Escape
-                    displayText: "Esc"
-                }
-                Key {
-                    key: Qt.Key_Tab
-                    displayText: "⇥"
-                    repeat: true
-
-                }
-                Key {
-                    key: Qt.Key_Copy
-                    displayText: "⧉"
-                }
-                Key {
-                    key: Qt.Key_Paste
-                    displayText: "⎀"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_AsciiTilde
-                    text: "~"
-                }
-                Key {
-                    key: Qt.Key_Slash
-                    text: "/"
-                }
-                Key {
-                    key: Qt.Key_Left
-                    displayText: "←"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Up
-                    displayText: "↑"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Down
-                    displayText: "↓"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Right
-                    displayText: "→"
-                    repeat: true
-                }
-            }
-            KeyboardRow {
-                Key {
                     key: Qt.Key_1
                     text: "1"
                 }
@@ -237,54 +188,6 @@ KeyboardLayoutLoader {
             keyWeight: 160
             readonly property real normalKeyWidth: normalKey.width
             readonly property real functionKeyWidth: mapFromItem(normalKey, normalKey.width / 2, 0).x
-            KeyboardRow {
-                Key {
-                    key: Qt.Key_Escape
-                    displayText: "Esc"
-                }
-                Key {
-                    key: Qt.Key_Tab
-                    displayText: "⇥"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Copy
-                    displayText: "⧉"
-                }
-                Key {
-                    key: Qt.Key_Paste
-                    displayText: "⎀"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_AsciiTilde
-                    text: "~"
-                }
-                Key {
-                    key: Qt.Key_Slash
-                    text: "/"
-                }
-                Key {
-                    key: Qt.Key_Left
-                    displayText: "←"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Up
-                    displayText: "↑"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Down
-                    displayText: "↓"
-                    repeat: true
-                }
-                Key {
-                    key: Qt.Key_Right
-                    displayText: "→"
-                    repeat: true
-                }
-            }
             KeyboardRow {
                 Key {
                     key: Qt.Key_AsciiTilde

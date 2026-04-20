@@ -12,7 +12,6 @@ KeyboardLayoutLoader {
     sourceComponent: secondPage ? page2 : page1
     Component {
         id: page2
-
         KeyboardLayout {
             inputMode: InputEngine.InputMode.Latin
             keyWeight: 160
@@ -147,7 +146,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_A
                     text: "a"
-                    alternativeKeys: "aäåãâàá"
+                    alternativeKeys: "aåãâàá"
                 }
                 Key {
                     key: Qt.Key_S
@@ -252,7 +251,7 @@ KeyboardLayoutLoader {
                     Layout.fillWidth: false
                 }
                 Key {
-                    displayText: "hide"
+                    displayText: "✕"
                     functionKey: true
                     onClicked: secondPage = !secondPage
                     highlighted: true
@@ -275,7 +274,7 @@ KeyboardLayoutLoader {
                     weight: normalKeyWidth
                     Layout.fillWidth: false
                     text: "."
-                    alternativeKeys: "!.?,;:@"
+                    alternativeKeys: "!.?;:@"
                     smallText: "!?"
                     smallTextVisible: true
                     highlighted: true
@@ -346,7 +345,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_U
                     text: "u"
-                    alternativeKeys: "űūũûüu7ùú"
+                    alternativeKeys: "űūũûu7ùú"
                     smallText: "7"
                     smallTextVisible: true
                 }
@@ -360,7 +359,7 @@ KeyboardLayoutLoader {
                 Key {
                     key: Qt.Key_O
                     text: "o"
-                    alternativeKeys: "œøõôöòóo9"
+                    alternativeKeys: "œøõôòóo9"
                     smallText: "9"
                     smallTextVisible: true
                 }
@@ -485,7 +484,7 @@ KeyboardLayoutLoader {
                     Layout.fillWidth: false
                 }
                 Key {
-                    displayText: "show"
+                    displayText: "☰"
                     functionKey: true
                     onClicked: secondPage = !secondPage
                     highlighted: true
@@ -508,7 +507,7 @@ KeyboardLayoutLoader {
                     weight: normalKeyWidth
                     Layout.fillWidth: false
                     text: "."
-                    alternativeKeys: "!.?,;:@"
+                    alternativeKeys: "!.?;:@"
                     smallText: "!?"
                     smallTextVisible: true
                     highlighted: true
